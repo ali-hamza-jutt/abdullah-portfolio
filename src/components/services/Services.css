@@ -1,0 +1,47 @@
+:root{
+    --services-background-color:#262626;
+    --services-hover-color:#ff004f;
+}
+
+.services
+{
+    padding: 30px 0;
+}
+
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    margin-top: 50px;
+    padding: 0 60px;
+}
+
+.service{
+    background-color: var(--services-background-color);
+    padding:40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+    transition: background 0.5s,  transform 0.5 s;
+}
+
+.service h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.service .service-icon{
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+}
+.service p{
+    font-size: 14px;
+}
+.service:hover{
+    background-color: var(--services-hover-color);
+    transform: translateY(-10px);
+
+}
