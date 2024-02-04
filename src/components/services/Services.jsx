@@ -13,7 +13,7 @@ const Services=()=>{
     return(
         <div className="services" id='services'>
             <div className="container"> 
-                <h1 className="sub-title">Services</h1>
+                <h1 className="about-heading">Services</h1>
                 <div className="services-list">
                     <div className="service">
                         <FontAwesomeIcon icon={faCode} className='service-icon' />

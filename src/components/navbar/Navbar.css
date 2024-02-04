@@ -56,3 +56,26 @@ nav ul li a:hover::before {
     color: var(--primary-color);
     font-size: 60px;
 }
+
+
+
+
+.professional-social-link
+{
+    margin-top: 30px;
+}
+.professional-social-icon
+{
+    text-decoration: none;
+    font-size: 30px;
+    margin-top: 15px;
+    margin-right: 15px;
+    color: var(--social-icon-color);
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.professional-social-icon:hover{
+    color: var(--primary-color);
+    transform: translateY(-5px);
+}
