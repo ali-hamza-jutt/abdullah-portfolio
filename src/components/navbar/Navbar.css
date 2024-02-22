@@ -90,16 +90,42 @@ nav ul li a:hover::before {
     transform: translateY(-5px);
 }
 
+.xmark-icon{
+    display: none;
+}
+
+.bar-icon{
+    display: none;
+}
 /* Media Queries */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     .header{
         background-image: url('/public/images/phone-background.png');
     }
-
+    nav .nav-links {
+        position: absolute;
+        top: 0;
+        right: -40%; /* Initially positioned outside the viewport */
+        height: 100%;
+        width: 40%;
+        background: var(--primary-color);
+        display: flex;
+        flex-direction: column;
+        padding-top: 2%;
+        transition: right 0.5s; /* Transition the 'right' property */
+    }
+    
+    nav .nav-links.active {
+        right: 0; /* Slide in the navbar to the viewport */
+    }
+    
+    nav .nav-links li{
+        margin: 10px 20px;
+    }
     .header-text{
-        margin-top: 110%;
+        margin-top: 80%;
         font-size: 18px;
-        width: 40vw;
+        width: 50vw;
     }
     .header-text h1 {
         font-size: 30px;
@@ -108,5 +134,13 @@ nav ul li a:hover::before {
         color: var(--primary-color);
         font-size: 30px;
     }
+    .xmark-icon{
+        display: block  ;
+    }
+    
+    .bar-icon{
+        display: block;
+    }
+
  
 }
