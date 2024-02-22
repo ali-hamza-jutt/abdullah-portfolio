@@ -80,3 +80,34 @@
     display: block;
     opacity: 1;
 }
+
+@media screen and (max-width:600px) {
+    .about-section{
+        padding: 20px;
+    }
+
+    .row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sub-heading{
+        color: var(--white-color);
+        font-size: 40px;
+        font-weight: 600;
+        margin: 10px 0;
+    }
+    .tab-titles{
+        display: flex;
+        margin: 20px 0;
+    }
+    .tab-links{
+        font-weight: 500;
+        font-size: 18px;
+        cursor: pointer;
+        position: relative;
+    }
+
+
+}
