@@ -89,9 +89,9 @@ const Contact = () => {
   return (
     <div id='contact'>
       <div className="container">
+            <h1 className="sub-title">Contact Me</h1>
         <div className="row">
           <div className="contact-left">
-            <h1 className="sub-title">Contact Me</h1>
             <p>{phoneSvg}03247916471</p>
             <p>{envelopeSvg}abdullahahmad.319@gmail.com</p>
             <div classsName="social-icons">
