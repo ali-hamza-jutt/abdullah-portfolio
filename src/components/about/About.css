@@ -100,13 +100,16 @@
     }
     .tab-titles{
         display: flex;
-        margin: 20px 0;
+        justify-content: space-around;
+        margin: 20px 0px;
+        
     }
     .tab-links{
         font-weight: 500;
         font-size: 18px;
         cursor: pointer;
         position: relative;
+
     }
 
 

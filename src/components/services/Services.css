@@ -55,4 +55,20 @@
 		grid-template-columns: repeat(1, 1fr);
 		padding: 0 20px;
 	}
+    .sub-heading{
+        color: var(--white-color);
+        font-size: 40px;
+        font-weight: 600;
+        margin: 10px 20px;
+    }
+    .service h2{
+        font-size: 25px;
+    }
+    .service p{
+        font-size: 16px;
+    }
+    .service .service-icon{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
 }

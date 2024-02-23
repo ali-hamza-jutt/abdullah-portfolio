@@ -83,3 +83,13 @@
 .see-more:hover{
     background: var(--primary-color);
 }
+
+@media screen and (max-width: 600px)
+{
+    .work-list{
+        display: grid;
+        padding: 40px 0;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+}
