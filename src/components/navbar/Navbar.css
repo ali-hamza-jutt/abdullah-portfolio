@@ -16,11 +16,19 @@
 }
 
 nav {
+    /* position: sticky;
+    top: 0;
+    z-index: 1000; 
+    background-color: transparent; 
+    transition: background-color 0.3s ease-in-out;  */
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 5%;
+
 }
+
+
 
 .nav-links {
     list-style: none;
@@ -56,6 +64,13 @@ nav ul li a::before {
 nav ul li a:hover::before {
     transform: scaleX(1);
 }
+
+/* .nav-links li.active a::before,.nav-links li.active a{
+    transform: scaleX(1);
+    color: var(--primary-color);
+} */
+
+
 
 .header-text {
     margin-top: 15%;

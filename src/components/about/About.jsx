@@ -10,13 +10,14 @@ const About = () => {
 
   return (
     <div className='about-section' id='about'>
-      <div className="container">
-        <div className="row">
+      <div className="about-container">
+        <div className="about-row">
+        <h1 className='about-sub-heading mobile'>About Me</h1>
           <div className="about-col-1">
             <img src="/images/user.png" alt="user-img" />
           </div>
           <div className="about-col-2">
-            <h1 className='sub-heading'>About Me</h1>
+            <h1 className='about-sub-heading'>About Me</h1>
             <p>Innovative and deadline-driven Software Engineer with 2 years of experience in designing and developing Flutter Apps from initial concept to final, polished deliverable.</p>
             <div className="tab-titles">
               <p className={`tab-links ${activeTab === 'skills' ? 'active-link' : ''}`} onClick={() => handleTabClick('skills')}>Skills</p>

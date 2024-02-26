@@ -4,7 +4,11 @@
 #contact{
     padding: 0 40px;
 }
-
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 .contact-left{
     flex-basis: 35%;
 }
@@ -86,6 +90,7 @@ form {
     transition: background 0.5s;
     font-size: 15px;
     letter-spacing: 1px;
+    cursor: pointer;
 }
 
 .contact-submit-btn:hover{

@@ -6,9 +6,15 @@ import { faLinkedin, faGithub, faStackOverflow } from '@fortawesome/free-brands-
 
 const Navbar = () => {
     const [isActive, setIsActive] = useState(false);
+    const [activeLink, setActiveLink] = useState('');
 
     const toggleActive = () => {
         setIsActive(!isActive);
+    };
+
+    const handleLinkClick = (link) => {
+        setActiveLink(link);
+        setIsActive(false); // Close the menu when a link is clicked
     };
 
     const barIcon = (
@@ -31,17 +37,28 @@ const Navbar = () => {
                 <nav>
                     <h1 className='logo'>Abdullah.</h1>
                     <ul className={`nav-links ${isActive ? 'active' : ''}`}>
-                        <li className='xmark-icon'>{xmarkIcon}</li>
-                        <li><a href="#navbar">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li className={`xmark-icon ${isActive ? 'active' : ''}`} onClick={toggleActive}>
+                            {xmarkIcon}
+                        </li>
+                        <li className={`${activeLink === 'Home' ? 'active' : ''}`}>
+                            <a href="#navbar" onClick={() => handleLinkClick('Home')}>Home</a>
+                        </li>
+                        <li className={`${activeLink === 'About' ? 'active' : ''}`}>
+                            <a href="#about" onClick={() => handleLinkClick('About')}>About</a>
+                        </li>
+                        <li className={`${activeLink === 'Services' ? 'active' : ''}`}>
+                            <a href="#services" onClick={() => handleLinkClick('Services')}>Services</a>
+                        </li>
+                        <li className={`${activeLink === 'Portfolio' ? 'active' : ''}`}>
+                            <a href="#portfolio" onClick={() => handleLinkClick('Portfolio')}>Portfolio</a>
+                        </li>
+                        <li className={`${activeLink === 'Contact' ? 'active' : ''}`}>
+                            <a href="#contact" onClick={() => handleLinkClick('Contact')}>Contact</a>
+                        </li>
                     </ul>
                     <div className='bar-icon'>
                         {barIcon}
                     </div>
-                    
                 </nav>
                 <div className="header-text">
                     <h1>Hi, I'm <span className='dev-name'>Abdullah</span></h1>

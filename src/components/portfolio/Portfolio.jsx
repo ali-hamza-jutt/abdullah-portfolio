@@ -10,14 +10,13 @@ const Portfolio = () =>
     return(
         <div className='my-work' id='portfolio'>
             <div className="container">
-                <h1 className="sub-title">
+                <h1 className="work-sub-heading">
                     My Work
                 </h1>
                 <div className="work-list">
                     <div className="work">
-                        <img src="/images/meal/meals_main.png" alt="" />
-                        <div className="layer">
-                            
+                        <img className='portfolio-image' src="/images/meal/meals_main.png" alt="" />
+                        <div className="layer">      
                         <h3>Meals App</h3>
                         <p>A culinary companion that suggests recipes, meal plans, and helps users discover new dishes based on preferences and dietary restrictions.</p>
                         <div className="external-link">{externalLinkSvg}</div>
@@ -41,7 +40,7 @@ const Portfolio = () =>
                         </div>
                     </div>
                 </div>
-                    <a href="#" className='see-more'>See More</a>
+                    {/* <a href="#" className='see-more'>See More</a> */}
             </div>
         </div>
     )

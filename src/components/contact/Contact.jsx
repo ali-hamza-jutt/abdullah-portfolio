@@ -88,12 +88,12 @@ const Contact = () => {
 
   return (
     <div id='contact'>
-      <div className="container">
+      <div className="contact-container">
             <h1 className="sub-title">Contact Me</h1>
         <div className="row">
           <div className="contact-left">
             <p>{phoneSvg}03247916471</p>
-            <p>{envelopeSvg}abdullahahmad.319@gmail.com</p>
+            <p>{envelopeSvg}abdullahahmad319.319@gmail.com</p>
             <div classsName="social-icons">
               <a className='contact-social-link' href=""> <FontAwesomeIcon icon={faLinkedin} className='contact-social-icon' /></a>
               <a className='contact-social-link' href=""><FontAwesomeIcon icon={faFacebook} className='contact-social-icon' /></a>
